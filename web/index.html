@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>WebShopJS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">WebShopJS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Товар
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a id="listProducts" class="dropdown-item" href="#">Список Товаров</a></li>
+                      <li><a id="newProduct" class="dropdown-item" href="#">Добавить новый товар</a></li>
+                  </ul>
+                </li>
+            
+                <li id="liPurchase" class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Покупка
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a id="takeOnPurchase" class="dropdown-item" href="#">Купить товар</a></li>
+                    <li><a id="addMoney" class="dropdown-item" href="#">Добавить денег</a></li>
+                  </ul>
+                </li>
+              
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Покупатели
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a id="listUsers" class="dropdown-item" href="#">Список Покупателей</a></li>
+                        <li><a id="newUser" class="dropdown-item" href="#">Добавить нового покупатеоя</a></li>
+                    </ul>
+                </li>
+                
+                <li id="liAdministrator" class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Администратор
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a id="changeRole" class="dropdown-item" href="#">Управление ролями</a></li>
+                     <li><a id="statisticForm" class="dropdown-item" href="">Вывести рейтинг читаемости</a></li>
+                  </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav me-right mb-2 mb-lg-0">
+                
+                <li class="nav-item">
+                  <p id="userLogin" class="dropdown-item"></p>
+                </li>
+                <li class="nav-item">
+                  <a id="logIn" class="dropdown-item" href="#">Вход</a>
+                </li>
+                <li class="nav-item">
+                    <span class="dropdown-item text-info"></span>
+                </li>
+                <li class="nav-item">
+                     <a id="logout" class="dropdown-item" href="#">Выход</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <p id="info" class="info w-100 my-3 d-flex justify-content-center"></p>
+      <div id="content">
+          
+      </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script type="module" src="js/main.js"></script>
+    </body>
+</html>
